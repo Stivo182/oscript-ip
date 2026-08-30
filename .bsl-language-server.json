@@ -2,6 +2,7 @@
     "diagnostics": {
         "parameters": {
             "LatinAndCyrillicSymbolInWord": false,
+            "UsingHardcodeNetworkAddress": false,
             "IncorrectLineBreak": {
                 "listOfIncorrectFirstSymbol": ";|,\\s*\\S+"
             }
