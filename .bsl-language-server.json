@@ -1,0 +1,10 @@
+{
+    "diagnostics": {
+        "parameters": {
+            "LatinAndCyrillicSymbolInWord": false,
+            "IncorrectLineBreak": {
+                "listOfIncorrectFirstSymbol": ";|,\\s*\\S+"
+            }
+        }
+    }
+}
