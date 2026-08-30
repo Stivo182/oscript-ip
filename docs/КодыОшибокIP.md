@@ -55,7 +55,7 @@
 КодыОшибокIP.НедопустимаяЗона()
 ```
 
-Возвращает `"ip.invalid_zone"`: зона IPv6 не соответствует профилю библиотеки. Модель зоны
+Возвращает `"ip.invalid_zone"`: зона IPv6 не соответствует профилю библиотеки или области адреса. Модель зоны
 основана на [RFC 4007 § 11](https://www.rfc-editor.org/rfc/rfc4007.html#section-11) и
 [RFC 9844 § 5](https://www.rfc-editor.org/rfc/rfc9844.html#section-5).
 
