@@ -1,7 +1,7 @@
 Описание.Имя("ip")
     .Версия("0.1.0")
     .Автор("Dmitry Ivanov")
-    .АдресРепозитория("https://github.com/oscript-library/ip")
+    .АдресРепозитория("https://github.com/Stivo182/oscript-ip")
     .Описание("IPv4/IPv6 адреса, CIDR-префиксы и IP endpoints")
     .ВерсияСреды("2.0.0")
     .ВключитьФайл("src")
