@@ -1,5 +1,9 @@
 # ip
 
+[![Release](https://img.shields.io/github/release/Stivo182/oscript-ip.svg)](https://github.com/Stivo182/oscript-ip/releases)
+[![Тестирование](https://github.com/stivo182/oscript-ip/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/stivo182/oscript-ip/actions/workflows/test.yml)
+[![Used by](https://litrosbadges.ru/package/ip.svg)](https://litrosbadges.ru/package/ip)
+
 `ip` - библиотека OneScript для строгой работы с IPv4, IPv6, CIDR-префиксами и числовыми
 IP-конечными точками. Объекты библиотеки неизменяемы, разбор не выполняет DNS-запросов и других
 сетевых операций.
