@@ -4,11 +4,11 @@
 от 0 до 65535. Класс не принимает имена узлов, не выполняет DNS-разрешение и не открывает
 сокеты. Методы возвращают значения или новые неизменяемые объекты и не меняют конечную точку.
 
-IPv4 основан на 32-битной модели [RFC 791 § 3.1](https://www.rfc-editor.org/rfc/rfc791.html#section-3.1), IPv6 - на
-[RFC 4291 § 2.2](https://www.rfc-editor.org/rfc/rfc4291.html#section-2.2). Каноническая IPv6-часть форматируется по
-[RFC 5952 § 4](https://www.rfc-editor.org/rfc/rfc5952.html#section-4), зона сохраняется буквально по модели
-[RFC 4007 § 11](https://www.rfc-editor.org/rfc/rfc4007.html#section-11) и
-[RFC 9844 § 5](https://www.rfc-editor.org/rfc/rfc9844.html#section-5).
+IPv4 основан на 32-битной модели [RFC 791 §3.1](https://www.rfc-editor.org/rfc/rfc791.html#section-3.1), IPv6 - на
+[RFC 4291 §2.2](https://www.rfc-editor.org/rfc/rfc4291.html#section-2.2). Каноническая IPv6-часть форматируется по
+[RFC 5952 §4](https://www.rfc-editor.org/rfc/rfc5952.html#section-4), зона сохраняется буквально по модели
+[RFC 4007 §11](https://www.rfc-editor.org/rfc/rfc4007.html#section-11) и
+[RFC 9844 §5](https://www.rfc-editor.org/rfc/rfc9844.html#section-5).
 
 ## Оглавление
 
@@ -63,7 +63,7 @@ IPv4 основан на 32-битной модели [RFC 791 § 3.1](https://w
 Если адрес внутри строки некорректен, `ip.invalid_endpoint` сохраняет конкретную ошибку разбора адреса
 в качестве причины. Поля `Компонент` и `Ожидание` уточняют, нарушена ли адресная часть, порт или структура
 конечной точки. Квадратные скобки основаны на синтаксисе
-[RFC 3986, раздел 3.2.2](https://www.rfc-editor.org/rfc/rfc3986#section-3.2.2), но буквальная зона `%zone` является
+[RFC 3986 §3.2.2](https://www.rfc-editor.org/rfc/rfc3986#section-3.2.2), но буквальная зона `%zone` является
 расширением библиотеки: RFC 3986 прямо не поддерживает идентификаторы зоны IPv6.
 
 Ошибки разбора отдельной строки IP с числовым портом совпадают с ошибками конструктора
