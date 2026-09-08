@@ -1,16 +1,16 @@
 # IPАдрес
 
 Неизменяемый объект-значение IPv4 или IPv6 с необязательной строковой зоной IPv6. IPv4 хранится
-как 32 бита по [RFC 791 § 3.1](https://www.rfc-editor.org/rfc/rfc791.html#section-3.1), IPv6 - как 128 бит по
-[RFC 4291 § 2.2](https://www.rfc-editor.org/rfc/rfc4291.html#section-2.2). Все методы, которые меняют представление,
+как 32 бита по [RFC 791 §3.1](https://www.rfc-editor.org/rfc/rfc791.html#section-3.1), IPv6 - как 128 бит по
+[RFC 4291 §2.2](https://www.rfc-editor.org/rfc/rfc4291.html#section-2.2). Все методы, которые меняют представление,
 возвращают новый объект; исходный адрес не изменяется.
 
 Разбор IPv4 принимает только четыре десятичных октета без знаков, пробелов и ведущих нулей.
-IPv6 принимает формы [RFC 4291 § 2.2](https://www.rfc-editor.org/rfc/rfc4291.html#section-2.2), а `ВСтроку()`
+IPv6 принимает формы [RFC 4291 §2.2](https://www.rfc-editor.org/rfc/rfc4291.html#section-2.2), а `ВСтроку()`
 выдаёт каноническую запись по
-[RFC 5952 § 4](https://www.rfc-editor.org/rfc/rfc5952.html#section-4). Зона следует модели областей действия
-[RFC 4007 § 11](https://www.rfc-editor.org/rfc/rfc4007.html#section-11) и актуальным рекомендациям
-[RFC 9844 § 5](https://www.rfc-editor.org/rfc/rfc9844.html#section-5), но хранится буквально и не декодируется как
+[RFC 5952 §4](https://www.rfc-editor.org/rfc/rfc5952.html#section-4). Зона следует модели областей действия
+[RFC 4007 §11](https://www.rfc-editor.org/rfc/rfc4007.html#section-11) и актуальным рекомендациям
+[RFC 9844 §5](https://www.rfc-editor.org/rfc/rfc9844.html#section-5), но хранится буквально и не декодируется как
 часть URI.
 
 ## Оглавление
@@ -80,7 +80,7 @@ IPv6 принимает формы [RFC 4291 § 2.2](https://www.rfc-editor.org/
 | `argument.out_of_range` | Октет находится вне диапазона от 0 до 255 |
 | `ip.invalid_address` | Строка не распознана как IP-адрес |
 | `ip.invalid_ipv4` | Нарушена строгая точечно-десятичная форма IPv4 |
-| `ip.invalid_ipv6` | Нарушена форма IPv6 по [RFC 4291 § 2.2](https://www.rfc-editor.org/rfc/rfc4291.html#section-2.2) |
+| `ip.invalid_ipv6` | Нарушена форма IPv6 по [RFC 4291 §2.2](https://www.rfc-editor.org/rfc/rfc4291.html#section-2.2) |
 | `ip.invalid_zone` | Зона не соответствует профилю библиотеки или области IPv6-адреса |
 | `ip.zone_not_allowed_for_ipv4` | Зона указана у IPv4 |
 | `ip.invalid_byte_length` | Передано не 4 и не 16 октетов |
@@ -331,8 +331,8 @@ IPv6 в сетевом порядке. Зона в результат не вх�
 #### Возвращаемое значение
 
 `Булево` для IPv4 `127.0.0.0/8` или IPv6 `::1`. Диапазоны
-определены [RFC 1122 § 3.2.1.3](https://www.rfc-editor.org/rfc/rfc1122.html#section-3.2.1.3) и
-[RFC 4291 § 2.5.3](https://www.rfc-editor.org/rfc/rfc4291.html#section-2.5.3).
+определены [RFC 1122 §3.2.1.3](https://www.rfc-editor.org/rfc/rfc1122.html#section-3.2.1.3) и
+[RFC 4291 §2.5.3](https://www.rfc-editor.org/rfc/rfc4291.html#section-2.5.3).
 
 ### ЭтоЛокальныйДляКанала
 
@@ -345,8 +345,8 @@ IPv6 в сетевом порядке. Зона в результат не вх�
 #### Возвращаемое значение
 
 `Булево` для IPv4 `169.254.0.0/16` по
-[RFC 3927 § 2.1](https://www.rfc-editor.org/rfc/rfc3927.html#section-2.1) или IPv6 `fe80::/10` по
-[RFC 4291 § 2.5.6](https://www.rfc-editor.org/rfc/rfc4291.html#section-2.5.6).
+[RFC 3927 §2.1](https://www.rfc-editor.org/rfc/rfc3927.html#section-2.1) или IPv6 `fe80::/10` по
+[RFC 4291 §2.5.6](https://www.rfc-editor.org/rfc/rfc4291.html#section-2.5.6).
 
 ### ЭтоЧастный
 
@@ -359,8 +359,8 @@ IPv6 в сетевом порядке. Зона в результат не вх�
 #### Возвращаемое значение
 
 `Булево` для частных IPv4-диапазонов по
-[RFC 1918 § 3](https://www.rfc-editor.org/rfc/rfc1918.html#section-3) или IPv6 `fc00::/7` по
-[RFC 4193 § 3.1](https://www.rfc-editor.org/rfc/rfc4193.html#section-3.1).
+[RFC 1918 §3](https://www.rfc-editor.org/rfc/rfc1918.html#section-3) или IPv6 `fc00::/7` по
+[RFC 4193 §3.1](https://www.rfc-editor.org/rfc/rfc4193.html#section-3.1).
 Результат является классификацией, а не гарантией безопасности или маршрутизируемости.
 
 ### ЭтоГрупповой
@@ -374,8 +374,8 @@ IPv6 в сетевом порядке. Зона в результат не вх�
 #### Возвращаемое значение
 
 `Булево` для IPv4 `224.0.0.0/4` по
-[RFC 1112 § 4](https://www.rfc-editor.org/rfc/rfc1112.html#section-4) или IPv6 `ff00::/8` по
-[RFC 4291 § 2.7](https://www.rfc-editor.org/rfc/rfc4291.html#section-2.7).
+[RFC 1112 §4](https://www.rfc-editor.org/rfc/rfc1112.html#section-4) или IPv6 `ff00::/8` по
+[RFC 4291 §2.7](https://www.rfc-editor.org/rfc/rfc4291.html#section-2.7).
 
 ### ПредназначенДляДокументации
 
@@ -388,8 +388,8 @@ IPv6 в сетевом порядке. Зона в результат не вх�
 #### Возвращаемое значение
 
 `Булево` для IPv4-диапазонов документации по
-[RFC 5737 § 3](https://www.rfc-editor.org/rfc/rfc5737.html#section-3) или IPv6 `2001:db8::/32` по
-[RFC 3849 § 2](https://www.rfc-editor.org/rfc/rfc3849.html#section-2).
+[RFC 5737 §3](https://www.rfc-editor.org/rfc/rfc5737.html#section-3) или IPv6 `2001:db8::/32` по
+[RFC 3849 §2](https://www.rfc-editor.org/rfc/rfc3849.html#section-2).
 
 Классификаторы петлевых, локальных для канала, частных, групповых, документационных и глобальных одноадресных
 адресов анализируют вложенный IPv4 у IPv6-адреса с отображённым IPv4. Семейство, версия и 128-битное
@@ -399,7 +399,7 @@ IPv6 в сетевом порядке. Зона в результат не вх�
 ### ОбластьГрупповогоАдреса
 
 Возвращает числовую область группового IPv6-адреса по
-[RFC 4291 § 2.7](https://www.rfc-editor.org/rfc/rfc4291.html#section-2.7). Для IPv4, IPv6-адреса с отображённым
+[RFC 4291 §2.7](https://www.rfc-editor.org/rfc/rfc4291.html#section-2.7). Для IPv4, IPv6-адреса с отображённым
 IPv4 и обычного одноадресного IPv6 возвращает `Неопределено`.
 
 ```bsl
@@ -422,7 +422,7 @@ IPv4 и обычного одноадресного IPv6 возвращает `�
 
 `Булево`: `Истина` для IPv6 из диапазона
 `::ffff:0:0/96`, определённого
-[RFC 4291 § 2.5.5.2](https://www.rfc-editor.org/rfc/rfc4291.html#section-2.5.5.2). Для IPv4
+[RFC 4291 §2.5.5.2](https://www.rfc-editor.org/rfc/rfc4291.html#section-2.5.5.2). Для IPv4
 возвращает `Ложь`.
 
 ### IPv6
@@ -487,7 +487,7 @@ IPv4 извлекается IPv4-адрес без зоны, а для оста�
 #### Поведение
 
 Метод обнуляет биты узла. Зона исходного IPv6 не переносится. Модель бесклассового IPv4-префикса
-соответствует [RFC 4632 § 3.1](https://www.rfc-editor.org/rfc/rfc4632.html#section-3.1).
+соответствует [RFC 4632 §3.1](https://www.rfc-editor.org/rfc/rfc4632.html#section-3.1).
 
 ### Равно
 
